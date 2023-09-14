@@ -1,0 +1,30 @@
+figure {
+  margin: 0;
+  padding: 25px 24px;
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands-card {
+  margin: 16px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.brand-title {
+  margin: 0;
+}
+
+.mat-card-header-center {
+  align-items: center;
+  text-align: center;
+}

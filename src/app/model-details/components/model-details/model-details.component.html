@@ -1,0 +1,30 @@
+<mat-card class="model-card" *appVar="item$ | async as carModel">
+  <mat-card-header>
+    <mat-card-title>{{ carModel.model }}</mat-card-title>
+    <figure mat-card-image class="car-model-image">
+      <img
+        alt="{{ carModel.name }} Image"
+        fill=""
+        [ngSrc]="imageUrl"
+        priority=""
+      />
+    </figure>
+  </mat-card-header>
+  <mat-card-content>
+
+    <h1>{{ carModel.make }} {{ carModel.model }}</h1>
+    <!--  <img [src]="imageUrl" alt="{{ carModel.make }} {{ carModel.model }} Image">-->
+    <p><strong>Fuel Type:</strong> {{ carModel.fuel_type }}</p>
+    <p><strong>Class:</strong> {{ carModel.class }}</p>
+    <p><strong>Year:</strong> {{ carModel.year }}</p>
+    <p><strong>Transmission:</strong> {{ carModel.transmission }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="cta-buttons">
+      <button mat-button color="primary" (click)="getQuote()">Get a Quote</button>
+      <button mat-button color="primary" (click)="openFinanceOfferPopup()">Finance Offer</button>
+    </div>
+  </mat-card-actions>
+</mat-card>
+
+

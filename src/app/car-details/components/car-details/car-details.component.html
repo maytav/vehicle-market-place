@@ -1,0 +1,41 @@
+<ng-container *appVar="car$ | async as car">
+
+  <h2 mat-dialog-title>{{ car.make }}  {{ car.model }}  Details</h2>
+
+  <div mat-dialog-content class="car-details">
+    <mat-dialog-content>
+      <div class="car-card">
+
+        <!--      <p>{{ car.description }}</p>-->
+        <p>Interest Rate: {{interestRate | percent}}</p>
+
+        <p>Price: {{ price | currencyFormat }}</p>
+        <p>Loan Amount: {{ loanAmount | currencyFormat }}</p>
+      <mat-slider
+        [displayWith]="formatLabel"
+        [min]="0"
+        [max]="price"
+        [step]="500"
+        discrete>
+        <input matSliderThumb [(ngModel)]="loanAmount">
+      </mat-slider>
+        <p>Loan Duration: {{ loanDuration }} Months</p>
+      <mat-slider
+        [min]="1"
+        [max]="120"
+        discrete
+      >
+        <input matSliderThumb [(ngModel)]="loanDuration">
+
+      </mat-slider>
+        <!--      <p>Monthly Payment: {{ calculateMonthlyPayment() | currency:'ILS':'symbol':'1.0-0' }}</p>-->
+        <section class="totals">
+          <p>Average Monthly
+            Payment: {{ calculateAveragePaymentEqualPrincipal() | currency:'ILS':'symbol':'1.0-0' }}</p>
+          <p>Total Payment: {{ calculateTotalPayment() | currencyFormat }}</p>
+        </section>
+
+      </div>
+    </mat-dialog-content>
+</div>
+</ng-container>

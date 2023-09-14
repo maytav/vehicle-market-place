@@ -1,0 +1,17 @@
+<h2>{{ brands }} Models</h2>
+
+<div class="model-list">
+  <mat-card *ngFor="let model of items$ | async" class="model-card">
+    <mat-card-header>
+      <mat-card-title>{{ model.model }}</mat-card-title>
+    </mat-card-header>
+    <!--    <img mat-card-image [ngSrc]="model.imageUrl" width="300" height="169" alt="{{ model.name }} Image">-->
+
+    <mat-card-content>
+      <p>{{ model.model }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button [routerLink]="[model.model]">View Cars</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

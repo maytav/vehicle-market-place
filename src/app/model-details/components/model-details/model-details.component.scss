@@ -1,0 +1,25 @@
+.mat-mdc-card-header {
+
+  justify-content: space-between;
+}
+
+.mat-mdc-card-content, .mat-mdc-card-actions {
+  align-self: center;
+}
+
+figure {
+  margin: 0;
+  padding: 84.5px 150px;
+}
+
+.model-card {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.cta-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+

@@ -1,0 +1,49 @@
+.car-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.totals {
+  text-align: center;
+}
+.car-card {
+  max-width: 540px;
+  width: 100%;
+  //text-align: center;
+}
+
+.mat-mdc-dialog-content {
+  //padding: 0 10px;
+
+}
+mat-slider {
+  width: 100%;
+}
+
+/* עיצוב ל-thumb של ה-slider */
+.mat-slider-thumb {
+  width: 30px;
+  height: 30px;
+  background-color: #007bff; /* צבע הכפתור */
+  border-radius: 50%; /* קיפול עיגולי */
+}
+
+/* עיצוב ל-track של ה-slider */
+.mat-slider-track {
+  height: 8px;
+  background-color: #dcdcdc; /* צבע הפס הבסיסי */
+}
+
+.mat-slider-track-fill {
+  background-color: #007bff; /* צבע הפס המלא */
+}
+
+.mat-slider-thumb-label {
+  font-size: 18px;
+  font-weight: bold;
+  width: 500px !important; /* הרוחב יתאים אוטומטית לתוכן */
+  text-align: center; /* מרכז הטקסט בתוך הבלון */
+  padding: 2px 8px; /* מרווח בין הטקסט לקצוות הבלון */
+}

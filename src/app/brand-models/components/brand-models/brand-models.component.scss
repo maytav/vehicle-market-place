@@ -1,0 +1,15 @@
+.model-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mat-mdc-card-actions {
+  margin-top: auto;
+}
+
+.model-card {
+  margin: 16px;
+  max-width: 300px;
+  width: 100%;
+}

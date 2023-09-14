@@ -1,0 +1,17 @@
+figure {
+  margin: 0;
+  padding: 84.5px 150px;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-card {
+  margin: 16px;
+  max-width: 300px;
+  width: 100%;
+}

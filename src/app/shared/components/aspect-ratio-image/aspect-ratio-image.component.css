@@ -1,0 +1,8 @@
+figure {
+    margin: 0;
+    padding: 25px 24px;
+}
+
+img {
+    object-fit: contain;
+}

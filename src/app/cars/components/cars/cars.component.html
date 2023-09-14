@@ -1,0 +1,28 @@
+<h2>{{ brand }} {{ model }} Cars</h2>
+
+<div class="car-list">
+  <mat-card *ngFor="let car of items$ | async" class="car-card">
+    <mat-card-header>
+      <!--      <mat-card-title>{{ car.model }}</mat-card-title>-->
+      <figure mat-card-image class="car-image">
+        <img
+          alt="{{ car.model }} Image"
+          fill=""
+          [ngSrc]="imageUrl"
+          priority=""
+        />
+      </figure>
+    </mat-card-header>
+    <!--    <img mat-card-image [src]="imageUrl" alt="{{ car.name }} Image">-->
+    <mat-card-content>
+      <p>{{ car.model }}</p>
+      <p>Price: {{ 200000 | currencyFormat }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="onItemSelected(car)"
+              [routerLink]="['/brands', brand, model, 'details']">View
+        Details
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
